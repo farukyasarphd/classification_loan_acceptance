@@ -16,3 +16,4 @@ To get started with this project:
    ```bash
    git clone <repository-url>
    cd "Cap Gemini Technical Test"
+2. 
