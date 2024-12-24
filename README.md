@@ -34,3 +34,31 @@ Ensure the following tools are installed on your system:
 - Open the analysis notebook in your browser and run the cells.
 
 
+## API Usage
+
+1. Start the server in the console:
+
+*poetry run uvicorn app:app --reload --host 0.0.0.0 --port 8000*
+
+2. Access the API Documentation (Swagger UI)
+    Open the browser and go to:
+    *http://localhost:8000/docs*
+
+    You can also use ReDoc:
+    *http://localhost:8000/redoc*
+
+3. Example Input (JSON Format)
+    Try with the below example: 
+    {
+      "features": [
+        [45, 100000, 5, 1, 1, 1, 0, 0, 1, 1, 0],
+        [50, 120000, 3, 0, 2, 0, 1, 1, 0, 0, 0],
+        [35, 90000, 3, 1, 0, 2, 0, 1, 1, 1, 0]
+      ]
+    }
+
+4. Example Output
+    {
+      "predictions": [1, 0, 1],
+      "probabilities": [0.99, 0.05, 0.87]
+    }

@@ -47,15 +47,23 @@ def train_model(X_train, y_train, model_type, **kwargs):
     Returns:
         Trained model.
     """
+    
+    # Default parameters
+    default_params = {
+        "random_state": RANDOM_STATE
+    }
+
+    # Merge default and explicitly provided parameters
+    final_params = {**default_params, **kwargs}
     # Initialize model
     if model_type == "xgboost":
-        model = XGBClassifier(eval_metric="logloss", random_state=RANDOM_STATE, **kwargs)
+        model = XGBClassifier( **final_params)
     elif model_type == "random_forest":
-        model = RandomForestClassifier(random_state=RANDOM_STATE, **kwargs)
+        model = RandomForestClassifier( **final_params)
     elif model_type == "gradient_boosting":
-        model = GradientBoostingClassifier(random_state=RANDOM_STATE, **kwargs)
+        model = GradientBoostingClassifier( **final_params)
     elif model_type == "logistic_regression":
-        model = LogisticRegression(max_iter=1000, random_state=RANDOM_STATE, **kwargs)
+        model = LogisticRegression( **final_params)
     else:
         raise ValueError("Unsupported model type. Choose from 'xgboost', 'random_forest', 'gradient_boosting', 'logistic_regression'.")
 

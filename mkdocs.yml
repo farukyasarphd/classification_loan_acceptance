@@ -1,0 +1,7 @@
+site_name: Loan Acceptance Prediction API
+nav:
+  - Home: index.md
+  - API Guide:
+      - Overview: api_overview.md
+theme:
+  name: mkdocs
