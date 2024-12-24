@@ -38,7 +38,7 @@ Ensure the following tools are installed on your system:
 
 1. Start the server in the console:
 
-*poetry run uvicorn app:app --reload --host 0.0.0.0 --port 8000*
+    *poetry run uvicorn app:app --reload --host 0.0.0.0 --port 8000*
 
 2. Access the API Documentation (Swagger UI)
     Open the browser and go to:
@@ -49,6 +49,8 @@ Ensure the following tools are installed on your system:
 
 3. Example Input (JSON Format)
     Try with the below example: 
+
+    ```json
     {
       "features": [
         [45, 100000, 5, 1, 1, 1, 0, 0, 1, 1, 0],
@@ -56,9 +58,20 @@ Ensure the following tools are installed on your system:
         [35, 90000, 3, 1, 0, 2, 0, 1, 1, 1, 0]
       ]
     }
+    ```
 
-4. Example Output
+5. Example Output
+    ```json
     {
-      "predictions": [1, 0, 1],
-      "probabilities": [0.99, 0.05, 0.87]
+      "predictions": [
+        1,
+        1,
+        1
+      ],
+      "probabilities": [
+        0.9999530273938793,
+        0.9999899265919541,
+        0.9994081409953709
+      ]
     }
+```
