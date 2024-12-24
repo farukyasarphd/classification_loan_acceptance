@@ -4,11 +4,10 @@
 This repository structure:
 - `/data`: Contains datasets (raw and processed).
   - `/raw`: Holds unprocessed data files.
-  - `/processed`: Stores cleaned and transformed data.
+  - `/processed`: Stores cleaned, transformed and balanced data.
 - `/notebooks`: Jupyter notebooks for analysis and modeling.
 - `/src`: Source code modules for reusable functions and pipelines.
-- `/tests`: Unit tests for validating the code.
-- `/docs`: Documentation files, optional for generating with MkDocs.
+- `/docs`: Documentation files.
 
 ## Environment Setup and Usage
 This project is built and managed using Poetry for dependency management. The main analysis is explained in the Analysis.ipynb notebook. To reproduce and run the notebook follow the steps below to set up the environment.
@@ -35,6 +34,9 @@ Ensure the following tools are installed on your system:
 
 
 ## API Usage
+
+Visit the API documentation page: 
+    https://farukyasarphd.github.io/classification_loan_acceptance/
 
 1. Start the server in the console:
 
