@@ -1,7 +1,7 @@
 site_name: Loan Acceptance Prediction API
 nav:
   - Home: index.md
-  - Analysis and Model Training: analysis.md
+  - Analysis and Model Training: analysis.html
   - API Guide:
       - Overview: api_overview.md
 theme:
