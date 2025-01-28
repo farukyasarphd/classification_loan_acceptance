@@ -1,4 +1,4 @@
-# Cap Gemini Technical Test
+# Loan Acceptance Prediction Model (Classification)
 
 ## Project Structure
 This repository structure:
