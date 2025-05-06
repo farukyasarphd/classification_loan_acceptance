@@ -1,5 +1,22 @@
 # Loan Acceptance Prediction Model (Classification)
 
+🎯 **Objective**
+Predict customer loan acceptance to identify factors influencing their decisions. This will help to focus the required effort and the cost on the customers who are most likely to accept the loan offer.
+
+🎯 **The Approach** 
+Minimize False Negatives (maximize Recall) to improve targeting of customers likely to accept offers.
+
+📈 **Business Impact**
+Enhanced targeting efficiency
+Reduced missed opportunities for loan conversions
+
+🤔 **The Challenge**
+The data is significantly imbalanced in favor of rejection of the loan offer. 
+
+Target Variable Distribution (Personal Loan):
+-  Accepted: 9.6%
+-  Not Accepted: 90.4%
+
 ## Project Structure
 This repository structure:
 - `/data`: Contains datasets (raw and processed).
